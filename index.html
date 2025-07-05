@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LİST</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+        h1{
+            color:  #d198b1;
+        }
+        #gorevInput{
+            height: 20px;
+            width:500px;
+            margin-right: 10px;
+            color: #8d708d;
+        }
+        #gorevDelete{
+           
+            width:500px;
+            height: 20px;
+            margin-right: 10px;
+            color: #8d708d;
+        }   
+        #gorevDelete::placeholder
+        {
+            color: #8d708d;
+        }
+        #gorevInput::placeholder
+        {
+            color: #8d708d;
+        }   
+        #ekleBtn{
+            width: 100px;
+            height: 20px;  
+            cursor:pointer;
+            align-items: center;
+            background-color: #8f6c8b;
+            color: #e3dee3;
+
+        }
+        #silBtn{
+           width: 100px;
+            height: 20px;
+            cursor:pointer;
+            align-items: center;
+            background-color: #87618d;
+            color: #e3dee3; 
+        }
+        #gosterBtn{
+            width: 100px;
+            height:30px;
+            cursor:pointer;
+            align-items: center;
+            background-color: #87618d;
+            color: #e3dee3;
+        }
+        ul{
+            list-style:none;
+            padding:0;
+            margin-top:20px;
+        }
+        li{
+            background-color: #fff;
+            padding:10px;
+            margin-bottom:10px;
+            border-radius: 4px;
+            display: flex ;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .tamamlandi{
+            text-decoration:line-through;
+            color:green;
+        }
+        button.gorev-btn{
+            margin-left:10px;
+            padding:5px;
+        }
+        .ekle_blok,
+        .sil_blok {
+        margin-bottom: 20px; /* Alt tarafa 20px boşluk bırakır */
+            }
+        
+        </style>
+
+</head>
+<body>
+    <h1 text:>Yapılacaklar Listesi </h1>
+     
+    <div class="ekle_blok">
+        <input type="text" id="gorevInput" placeholder="Görev giriniz."/>
+        <button id="ekleBtn">Ekle</button>
+    </div>
+    <div class="sil_blok">
+        <input type="text" id="gorevDelete"  placeholder="Silinecek görevi giriniz."/>
+        <button id="silBtn">Sil</button>
+    </div>
+    <div class="goster_blok">
+        <button id="gosterBtn">Göster</button>
+        
+    <ul id="gorevListesi"></ul>
+<script src="app.js"></script></body>
+</html>
